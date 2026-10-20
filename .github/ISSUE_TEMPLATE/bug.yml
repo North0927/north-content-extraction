@@ -1,0 +1,11 @@
+name: 问题反馈
+description: 请先脱敏，不上传密钥或私人素材。
+title: "[问题] "
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 怎样复现
+      description: 版本、系统、宿主、步骤、预期和实际结果。
+    validations:
+      required: true

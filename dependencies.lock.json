@@ -1,0 +1,13 @@
+{
+  "distribution_version": "0.1.0",
+  "business_protocol": "2.3.2",
+  "source_revision": "r20261018-dispatch-first",
+  "python": "3.10+ optional, stdlib only",
+  "docs": {
+    "vitepress": "1.6.4",
+    "markdown-it": "14.1.0",
+    "transitive_lock": "pnpm-lock.yaml"
+  },
+  "bundled_third_party_skills": [],
+  "external_services": "user-provided, not bundled"
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0.0",
+  "report_version": "1.0.0",
+  "engine_version": "2.3.2",
+  "revision": "r20261018-dispatch-first",
+  "path_base": "examples/demo/",
+  "source": {
+    "path": "source.md",
+    "sha256": "b6be8107270c2e7e2f8d01174524a022485d026b78b4c622486d380203113a60",
+    "type": "complete_text",
+    "title": "把灵感变成可以检查的作品",
+    "author": "North 项目示例",
+    "provenance_note": "开源原创教学示例，非 North 亲笔经历",
+    "license_as_stated": "MIT",
+    "external_verification": false
+  },
+  "coverage": {
+    "full_text_read": true,
+    "scope": "标题、来源说明及全部六段",
+    "media_analysis": "not_applicable",
+    "total_count": 6,
+    "paragraph_ids": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6"
+    ],
+    "read_count": 6
+  },
+  "special_anchors": [
+    {
+      "text": "把灵感变成可以检查的作品",
+      "id": "TITLE",
+      "conclusion_ids": [
+        "C11"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "conclusion_ids": [
+        "C01",
+        "C07",
+        "C11",
+        "C12",
+        "C14",
+        "C18"
+      ],
+      "id": "P1",
+      "heading": "先定义完成",
+      "anchor": "我曾把“今天试了三个 AI 工具”记作工作进展。"
+    },
+    {
+      "conclusion_ids": [
+        "C02",
+        "C07",
+        "C09",
+        "C12",
+        "C14",
+        "C17",
+        "C18"
+      ],
+      "id": "P2",
+      "heading": "把判断放进具体场景",
+      "anchor": "例如整理一份讲解材料，我不再只要求“帮我总结”。"
+    },
+    {
+      "conclusion_ids": [
+        "C03",
+        "C07",
+        "C10",
+        "C11",
+        "C13",
+        "C15",
+        "C17",
+        "C18"
+      ],
+      "id": "P3",
+      "heading": "让关键结论能回到来源",
+      "anchor": "它不能保证判断正确，也不能代替实际验证；它只是让别人有机会检查我的判断。"
+    },
+    {
+      "conclusion_ids": [
+        "C04",
+        "C07",
+        "C08",
+        "C13",
+        "C16",
+        "C17",
+        "C18"
+      ],
+      "id": "P4",
+      "heading": "每次只扩大一个变量",
+      "anchor": "遇到结果波动较大时，还要重复运行，而不是拿最好的一次当作稳定效果。"
+    },
+    {
+      "conclusion_ids": [
+        "C05",
+        "C07",
+        "C09",
+        "C10",
+        "C12",
+        "C13",
+        "C16",
+        "C17",
+        "C18"
+      ],
+      "id": "P5",
+      "heading": "承认这套做法也有成本",
+      "anchor": "记录应帮助工作继续，而不是变成新的负担。"
+    },
+    {
+      "conclusion_ids": [
+        "C06",
+        "C07",
+        "C10",
+        "C11",
+        "C12",
+        "C15",
+        "C17",
+        "C18"
+      ],
+      "id": "P6",
+      "heading": "留下下一步能接住的结果",
+      "anchor": "文件能打开，只能说明文件存在；真正能用，还需要另一个人按说明试一次。"
+    }
+  ],
+  "conclusions": [
+    {
+      "source_ids": [
+        "P1"
+      ],
+      "kind": "author_view",
+      "id": "C01",
+      "summary": "预先定义成果、使用者和可用标准"
+    },
+    {
+      "source_ids": [
+        "P2"
+      ],
+      "kind": "author_view",
+      "id": "C02",
+      "summary": "场景决定可用性，部分结果有时更有用"
+    },
+    {
+      "source_ids": [
+        "P3"
+      ],
+      "kind": "author_view",
+      "id": "C03",
+      "summary": "可追溯不保证正确，也不代替验证"
+    },
+    {
+      "source_ids": [
+        "P4"
+      ],
+      "kind": "author_view",
+      "id": "C04",
+      "summary": "小样本、主要单因素变化、重复与付费边界"
+    },
+    {
+      "source_ids": [
+        "P5"
+      ],
+      "kind": "author_view",
+      "id": "C05",
+      "summary": "按风险与用途选择记录强度"
+    },
+    {
+      "source_ids": [
+        "P6"
+      ],
+      "kind": "author_view",
+      "id": "C06",
+      "summary": "结果、边界、下一步与他人试用"
+    },
+    {
+      "source_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "kind": "structural_inference",
+      "id": "C07",
+      "summary": "深层母题是让判断可检查且可接续"
+    },
+    {
+      "source_ids": [
+        "P4"
+      ],
+      "kind": "independent_judgment",
+      "id": "C08",
+      "summary": "单因素比较的稳定条件及交互效应局限"
+    },
+    {
+      "source_ids": [
+        "P2",
+        "P5"
+      ],
+      "kind": "independent_judgment",
+      "id": "C09",
+      "summary": "缺项透明不意味着关键结论可采用"
+    },
+    {
+      "source_ids": [
+        "P3",
+        "P5",
+        "P6"
+      ],
+      "kind": "independent_judgment",
+      "id": "C10",
+      "summary": "无接收者时的降级记录不等同使用验收"
+    },
+    {
+      "source_ids": [
+        "TITLE",
+        "P1",
+        "P3",
+        "P6"
+      ],
+      "kind": "text_observation_and_inference",
+      "id": "C11",
+      "summary": "标题承诺与正文相符，点击作用仅是假设"
+    },
+    {
+      "source_ids": [
+        "P1",
+        "P2",
+        "P5",
+        "P6"
+      ],
+      "kind": "communication_hypothesis",
+      "id": "C12",
+      "summary": "问题落差、场景标准、成本与接续的文字推进"
+    },
+    {
+      "source_ids": [
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "kind": "communication_hypothesis",
+      "id": "C13",
+      "summary": "缺少填好示例可能让读者先感到记录成本"
+    },
+    {
+      "source_ids": [
+        "P1",
+        "P2"
+      ],
+      "kind": "growth_inference",
+      "id": "C14",
+      "summary": "以用途与可检查结果评价投入"
+    },
+    {
+      "source_ids": [
+        "P3",
+        "P6"
+      ],
+      "kind": "growth_inference",
+      "id": "C15",
+      "summary": "可检查性与诚实交接的协作责任"
+    },
+    {
+      "source_ids": [
+        "P4",
+        "P5"
+      ],
+      "kind": "growth_inference",
+      "id": "C16",
+      "summary": "兼顾不确定性与工作成本"
+    },
+    {
+      "source_ids": [
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "kind": "analyst_extension",
+      "id": "C17",
+      "summary": "直接、反向、跨领域及系列选题提案，均未执行"
+    },
+    {
+      "source_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "kind": "skill_candidate",
+      "id": "C18",
+      "summary": "可检查交付检查候选，未去重、安装或跨任务验证"
+    }
+  ],
+  "evidence_policy": {
+    "author_views_are_not_verified_events": true,
+    "retention_data_available": false,
+    "analyst_extensions_are_not_source_claims": true
+  },
+  "executed_by": {
+    "mode": "user_authorized_direct_text_analysis",
+    "role": "domain_worker",
+    "actual_session_id_omitted": true
+  },
+  "ai_generated": true,
+  "ai_statement": "由 AI 根据指定来源生成；分析与延伸均标识，未经原作者审定。"
+}

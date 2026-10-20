@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "report_version": "1.0.0",
+  "engine_version": "2.3.2",
+  "distribution_version": "0.1.0",
+  "revision": "r20261018-dispatch-first",
+  "path_base": "examples/demo/",
+  "status": "partial",
+  "text_analysis_status": "completed",
+  "html_status": "pending",
+  "independent_acceptance_status": "pending",
+  "analysis_mode": "detailed",
+  "executed_by": {
+    "description": "领域执行者按当次明确授权直接分析指定完整文字；未创建或联系其他聊天",
+    "role": "domain_worker",
+    "model": "未独立核验",
+    "execution_mode": "user_authorized_direct_text_analysis"
+  },
+  "input": {
+    "read_only": true,
+    "sha256": "b6be8107270c2e7e2f8d01174524a022485d026b78b4c622486d380203113a60",
+    "path": "source.md"
+  },
+  "artifacts": [
+    {
+      "type": "markdown_report",
+      "version": "1.0.0",
+      "status": "completed",
+      "path": "report.md"
+    },
+    {
+      "type": "source_mapping",
+      "version": "1.0.0",
+      "status": "completed",
+      "path": "source-map.json"
+    },
+    {
+      "type": "result_manifest",
+      "version": "1.0.0",
+      "status": "completed",
+      "path": "result-manifest.json"
+    },
+    {
+      "executed_by": "主 Agent 后续使用渲染器生成，尚未生成",
+      "type": "html_report",
+      "version": null,
+      "status": "pending",
+      "path": "report.html"
+    }
+  ],
+  "coverage": {
+    "diagnostic_question_count": 6,
+    "video_time_items": "F/G/H 合并标不适用；不以段落代替秒数",
+    "conclusion_ids": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "communication_index": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M"
+    ],
+    "paragraph_total": 6,
+    "paragraph_read_count": 6,
+    "paragraphs": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6"
+    ],
+    "audio_visual_validation": "not_applicable",
+    "sections": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05"
+    ],
+    "full_text": true
+  },
+  "missing": [
+    {
+      "status": "not_provided",
+      "item": "actual_cover"
+    },
+    {
+      "status": "not_provided",
+      "item": "publication_page_and_caption"
+    },
+    {
+      "status": "unverified_no_publication_page",
+      "item": "hashtags"
+    },
+    {
+      "status": "not_provided",
+      "item": "click_retention_conversion_data"
+    },
+    {
+      "status": "pending",
+      "item": "html"
+    },
+    {
+      "status": "not_measured",
+      "item": "folder_total_disk_allocation_peak"
+    },
+    {
+      "status": "not_tested",
+      "item": "reader_usability_and_method_effectiveness"
+    }
+  ],
+  "scope_limits": {
+    "browsing_performed": false,
+    "business_source_modified": false,
+    "existing_skill_deduplication": "not_performed_read_scope_restricted",
+    "chat_creation_performed": false,
+    "formal_skills_created": 0,
+    "paid_services_used": false,
+    "external_resource_recommendations": 0,
+    "messages_sent": false
+  },
+  "storage": {
+    "folder_statistics_complete": false,
+    "threshold_alerts": "unknown_for_entire_folder",
+    "source_map_logical_bytes": 7405,
+    "external_staging_used": false,
+    "report_logical_bytes": 16339,
+    "measurement_scope": "Only source.md and three authorized outputs; logical bytes only",
+    "source_logical_bytes": 2599,
+    "folder_logical_bytes": null,
+    "estimated_peak_bytes": null,
+    "disk_allocated_bytes": null,
+    "manifest_logical_bytes": 4715,
+    "measured_at_utc": "2026-10-20T02:08:37.7123709Z"
+  },
+  "ai_generated": true,
+  "ai_statement": "三份交付物由 AI 生成；原文为项目原创教学示例，不代表 North 亲笔经历；判断和扩展不冒充来源事实，无模型优劣结论。",
+  "validation": {
+    "status": "passed_self_checks",
+    "scope": "本地结构与来源映射自检；非独立验收",
+    "checks": [
+      "五部分存在",
+      "A-M 索引齐全，F/G/H 合并注明",
+      "M 六问",
+      "P1-P6 双向结论映射",
+      "JSON 可解析",
+      "公开产物不含本地绝对路径、邮箱或实际会话标识",
+      "HTML 标 pending"
+    ]
+  },
+  "next_step": "主 Agent 抽查原文和映射，使用渲染器补 HTML 并核验一致性；不得在生成前修改 HTML 为完成。"
+}

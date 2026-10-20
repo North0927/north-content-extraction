@@ -1,0 +1,18 @@
+{
+  "id": "north-content-extraction",
+  "name_zh": "North 内容提炼引擎",
+  "distribution_version": "0.1.0",
+  "business_version": "2.3.2",
+  "source_revision": "r20261018-dispatch-first",
+  "license": "MIT",
+  "entry": "SKILL.md",
+  "runtime": "具备文件读写能力的 AI 助手",
+  "python_optional": "3.10+，用于策略和任务单检查",
+  "api_key_required_by_package": false,
+  "bundled_external_services": false,
+  "platform_status": {
+    "Windows": "首发业务验证对象，证据见版本报告",
+    "macOS": "未实机验证",
+    "Linux": "文档构建不等于业务实测"
+  }
+}

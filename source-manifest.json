@@ -1,0 +1,102 @@
+{
+  "engine_version": "2.3.2",
+  "source_revision": "r20261018-dispatch-first",
+  "distribution_version": "0.1.0",
+  "source_kind": "North 用户级当前业务协议",
+  "excluded": [
+    "项目适配版本.json",
+    "references/codex-desktop.md",
+    "README.md"
+  ],
+  "files": [
+    {
+      "path": "SKILL.md",
+      "source_sha256": "fca2fa4781c21ec15c24d16fdd4cc4748e7d061b26b14627c45c1c9c2c626ed2",
+      "public_sha256": "c9d2462fd97d886157ea3b233fa59b3165847b7ff06b8b09dbb01b9b94c04539",
+      "adaptations": [
+        {
+          "note": "增加公开发行版本，业务版本不变"
+        }
+      ]
+    },
+    {
+      "path": "references/PROTOCOL.md",
+      "source_sha256": "38c6895e401205a89b2563f311e695c7b22ca65d7016011de869f8bc89e2c678",
+      "public_sha256": "38c6895e401205a89b2563f311e695c7b22ca65d7016011de869f8bc89e2c678",
+      "adaptations": []
+    },
+    {
+      "path": "references/media-evidence.md",
+      "source_sha256": "774846f437d0430d1f0fbbbb4cfbd233ccd53c10a51fa665563c577bb1108245",
+      "public_sha256": "a5c7c0d6a7484ca45db4f08e12200876d38304a68d723d3a2296a0f9d1e599a9",
+      "adaptations": [
+        {
+          "from": "全部实际文件在D盘指定工作区",
+          "to": "全部实际文件在用户指定工作区"
+        },
+        {
+          "from": "D盘任务范围",
+          "to": "用户授权任务范围"
+        }
+      ]
+    },
+    {
+      "path": "references/policy.json",
+      "source_sha256": "bf605c7cd45037fcaa8c0777aec54d3ad6315c07f9d3b7d1dd623775b00dc3b5",
+      "public_sha256": "bf605c7cd45037fcaa8c0777aec54d3ad6315c07f9d3b7d1dd623775b00dc3b5",
+      "adaptations": []
+    },
+    {
+      "path": "references/coordination.md",
+      "source_sha256": "9ebc7b05d37be4167617e8325d7aeb9cff18400f423f31c849d8a7d8bd9c53ae",
+      "public_sha256": "9ebc7b05d37be4167617e8325d7aeb9cff18400f423f31c849d8a7d8bd9c53ae",
+      "adaptations": []
+    },
+    {
+      "path": "references/environment.md",
+      "source_sha256": "856ac4432d592e15074e85a35fc65bd2a4f9a1ec05143cb0deaf87c6b2077c89",
+      "public_sha256": "2c2fd54fe581500eed85c7286e8e3fcdeb94834861171b23e6e07696bdf46a24",
+      "adaptations": [
+        {
+          "from": "D盘工作区",
+          "to": "工作区"
+        },
+        {
+          "from": "[桌面调度适配](codex-desktop.md)",
+          "to": "[宿主接入说明](host-integration.md)"
+        },
+        {
+          "from": "当前提供[宿主接入说明](host-integration.md)，它依赖指定应用，不宣称通用于所有宿主。",
+          "to": "当前提供通用的[宿主接入说明](host-integration.md)；实际调度接口由所选宿主提供，不宣称所有宿主都已实测。"
+        }
+      ]
+    },
+    {
+      "path": "references/report-template.md",
+      "source_sha256": "ff859b4dc6dec21b061681037ce4a21348338c573aa22f923d3b127c1e80972f",
+      "public_sha256": "d35aa2e6abbb33aa5253cbea45e0c6c763a08360d557d90b14fece13057e0ed2",
+      "adaptations": [
+        {
+          "from": "GPT-6.1 Sol（gpt-6.1-sol），中度推理（medium）；实际调用记录",
+          "to": "记录实际宿主、模型与工具；无调用证据则写未核验"
+        },
+        {
+          "from": "D盘绝对路径",
+          "to": "用户指定工作区的绝对路径"
+        }
+      ]
+    },
+    {
+      "path": "scripts/media_policy.py",
+      "source_sha256": "ff052e05c42edf6e065c1ad0ba55dd6ffe033d76a8f04392d8619f07cfa442ba",
+      "public_sha256": "ff052e05c42edf6e065c1ad0ba55dd6ffe033d76a8f04392d8619f07cfa442ba",
+      "adaptations": []
+    },
+    {
+      "path": "scripts/dispatch_check.py",
+      "source_sha256": "4452c4a85906830783ac594d56fddd15bbf04b4cfcc34cb976c25fe9bca1cedc",
+      "public_sha256": "dc79ec9ff4ef4e75458fda6504befc89c01b36c9a53387a969a38621428fd52b",
+      "adaptations": []
+    }
+  ]
+}

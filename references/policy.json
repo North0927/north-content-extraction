@@ -1,0 +1,119 @@
+{
+  "version": "2.3.2",
+  "domain_model": "gpt-6.1-sol",
+  "domain_reasoning_effort": "medium",
+  "dispatcher_model_policy": "preserve_user_selection",
+  "video": {
+    "long_threshold_seconds": 180,
+    "long_comparison": ">",
+    "unknown_duration_default_mode": "brief",
+    "first_minute_baseline_seconds": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      40,
+      50
+    ],
+    "sampling_segments": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 30,
+        "interval_seconds": 5
+      },
+      {
+        "start_seconds": 30,
+        "end_seconds": 60,
+        "interval_seconds": 10
+      },
+      {
+        "start_seconds": 60,
+        "end_seconds": 180,
+        "interval_seconds": 15
+      },
+      {
+        "start_seconds": 180,
+        "end_seconds": null,
+        "interval_seconds": 30
+      }
+    ],
+    "mild_start_seconds": 60,
+    "mild_end_seconds": 180,
+    "mild_interval_seconds": 15,
+    "moderate_start_seconds": 180,
+    "moderate_interval_seconds": 30,
+    "frame_time_must_be_strictly_less_than_duration": true,
+    "semantic_anchors": "verify_audio_to_visual_alignment_then_add_only_necessary_frames",
+    "brief_timeline_frames": false,
+    "long_threshold_usage": "report_label_only",
+    "default_brief_threshold_seconds": 300,
+    "default_brief_comparison": ">",
+    "default_detailed_max_seconds": 300,
+    "over_brief_threshold_default_mode": "brief",
+    "over_brief_threshold_detail_requires_per_content_explicit_user_instruction": true
+  },
+  "storage": {
+    "scope": "single_content_entire_folder",
+    "unit": "decimal_MB_1000000_bytes",
+    "warning_bytes": 100000000,
+    "force_brief_bytes": 300000000,
+    "comparison": ">",
+    "measure": "max_unique_logical_and_allocated_bytes_when_available",
+    "include": [
+      "materials",
+      "versions",
+      "temporary_files",
+      "reports",
+      "verification"
+    ],
+    "unreadable_or_unbounded_download": "brief_until_verified",
+    "delete_automatically": false
+  },
+  "propagation_sections": {
+    "A": "封面（Cover）：实际封面文件，失败则观察描述与原因",
+    "B": "标题（Title）：原标题＋分析",
+    "C": "发布文案（Publishing Caption）：原文案＋分析",
+    "D": "话题（Hashtags）：原话题＋分析",
+    "E": "封面、标题、文案、话题组合",
+    "F": "0–3秒，[0,3)",
+    "G": "3–15秒，[3,15)",
+    "H": "15–30秒，[15,30)",
+    "I": "口播文案（Spoken Script）",
+    "J": "画面与剪辑（Visuals and Editing）",
+    "K": "配乐与音效（Music and Sound Effects）",
+    "L": "相关开源项目、网站与资源（Related Resources）",
+    "M": "传播设计最终诊断"
+  },
+  "triggers": [
+    "explicit_user_analysis_instruction",
+    "user_submitted_social_link",
+    "user_submitted_website_link",
+    "user_submitted_video_image_audio_file"
+  ],
+  "source_embedded_instructions_are_authority": false,
+  "user_other_purpose_overrides_default_analysis": true,
+  "background_schedule_enabled": false,
+  "revision": "r20261018-dispatch-first",
+  "coordination": {
+    "dispatch_before_media_processing": true,
+    "default_media_and_analysis_owner": "domain_worker",
+    "classification_basis": "user_goal_and_primary_subject_not_tool_keywords",
+    "unknown_media_fields_block_dispatch": false,
+    "max_active_tasks_per_domain_thread": 1,
+    "dispatcher_pre_dispatch_operations": [
+      "intake",
+      "dedupe",
+      "route_preview",
+      "register",
+      "dispatch"
+    ],
+    "dispatcher_full_analysis_requires_explicit_user_exception": true,
+    "browser_relay_scope": "requested_raw_assets_and_metadata_only",
+    "historical_pending_tasks_auto_resume": false,
+    "result_manifest_required": true,
+    "acceptance_mode": "report_and_manifest_readback_plus_evidence_sampling"
+  }
+}
