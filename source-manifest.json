@@ -12,7 +12,7 @@
     {
       "path": "SKILL.md",
       "source_sha256": "fca2fa4781c21ec15c24d16fdd4cc4748e7d061b26b14627c45c1c9c2c626ed2",
-      "public_sha256": "c9d2462fd97d886157ea3b233fa59b3165847b7ff06b8b09dbb01b9b94c04539",
+      "public_sha256": "068b7f09c008c443cdbeb1dcd1453302d96d2671e96a49ca6e486f4a5d9ab33d",
       "adaptations": [
         {
           "note": "增加公开发行版本，业务版本不变"
@@ -22,13 +22,13 @@
     {
       "path": "references/PROTOCOL.md",
       "source_sha256": "38c6895e401205a89b2563f311e695c7b22ca65d7016011de869f8bc89e2c678",
-      "public_sha256": "38c6895e401205a89b2563f311e695c7b22ca65d7016011de869f8bc89e2c678",
+      "public_sha256": "ec730114d8bd7c3d95766a8671308bac7a3243f9e42bdd3e041804c8e280443a",
       "adaptations": []
     },
     {
       "path": "references/media-evidence.md",
       "source_sha256": "774846f437d0430d1f0fbbbb4cfbd233ccd53c10a51fa665563c577bb1108245",
-      "public_sha256": "a5c7c0d6a7484ca45db4f08e12200876d38304a68d723d3a2296a0f9d1e599a9",
+      "public_sha256": "775bdba9c3bd20c5024c86f72837f7939b3519f72afdfb732c9e8500ed12cab3",
       "adaptations": [
         {
           "from": "全部实际文件在D盘指定工作区",
@@ -43,19 +43,19 @@
     {
       "path": "references/policy.json",
       "source_sha256": "bf605c7cd45037fcaa8c0777aec54d3ad6315c07f9d3b7d1dd623775b00dc3b5",
-      "public_sha256": "bf605c7cd45037fcaa8c0777aec54d3ad6315c07f9d3b7d1dd623775b00dc3b5",
+      "public_sha256": "e647d0ab5f1df60c12e3c1a10d65e816f4e6bb2d3e023e082b7ae8433bf9502a",
       "adaptations": []
     },
     {
       "path": "references/coordination.md",
       "source_sha256": "9ebc7b05d37be4167617e8325d7aeb9cff18400f423f31c849d8a7d8bd9c53ae",
-      "public_sha256": "9ebc7b05d37be4167617e8325d7aeb9cff18400f423f31c849d8a7d8bd9c53ae",
+      "public_sha256": "3629eb0bfbc98652e77a04567cfb481d0342ebce189b0a7242b91750f41a8245",
       "adaptations": []
     },
     {
       "path": "references/environment.md",
       "source_sha256": "856ac4432d592e15074e85a35fc65bd2a4f9a1ec05143cb0deaf87c6b2077c89",
-      "public_sha256": "2c2fd54fe581500eed85c7286e8e3fcdeb94834861171b23e6e07696bdf46a24",
+      "public_sha256": "e12333821047208b0f653dad5c17914617bc4feaf75cf0223a852ca035300509",
       "adaptations": [
         {
           "from": "D盘工作区",
@@ -74,7 +74,7 @@
     {
       "path": "references/report-template.md",
       "source_sha256": "ff859b4dc6dec21b061681037ce4a21348338c573aa22f923d3b127c1e80972f",
-      "public_sha256": "d35aa2e6abbb33aa5253cbea45e0c6c763a08360d557d90b14fece13057e0ed2",
+      "public_sha256": "d8dcf8e8f63c1616177eacdac4b766b1f682fc5e05ac38f1dd2fdce81a94185e",
       "adaptations": [
         {
           "from": "GPT-6.1 Sol（gpt-6.1-sol），中度推理（medium）；实际调用记录",
@@ -89,14 +89,15 @@
     {
       "path": "scripts/media_policy.py",
       "source_sha256": "ff052e05c42edf6e065c1ad0ba55dd6ffe033d76a8f04392d8619f07cfa442ba",
-      "public_sha256": "ff052e05c42edf6e065c1ad0ba55dd6ffe033d76a8f04392d8619f07cfa442ba",
+      "public_sha256": "d67d8f655da523897dca971c0021631e9bfbb88d91a421f4d1af468c12ea006c",
       "adaptations": []
     },
     {
       "path": "scripts/dispatch_check.py",
       "source_sha256": "4452c4a85906830783ac594d56fddd15bbf04b4cfcc34cb976c25fe9bca1cedc",
-      "public_sha256": "dc79ec9ff4ef4e75458fda6504befc89c01b36c9a53387a969a38621428fd52b",
+      "public_sha256": "4452c4a85906830783ac594d56fddd15bbf04b4cfcc34cb976c25fe9bca1cedc",
       "adaptations": []
     }
-  ]
+  ],
+  "public_text_line_endings": "LF, enforced by .gitattributes"
 }

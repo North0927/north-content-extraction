@@ -6,13 +6,15 @@
   "path_base": "examples/demo/",
   "source": {
     "path": "source.md",
-    "sha256": "b6be8107270c2e7e2f8d01174524a022485d026b78b4c622486d380203113a60",
+    "sha256": "791de56a697e4878a889be28ed5ad10366b57b389710c44e12d18881d8d98c9d",
     "type": "complete_text",
     "title": "把灵感变成可以检查的作品",
     "author": "North 项目示例",
     "provenance_note": "开源原创教学示例，非 North 亲笔经历",
     "license_as_stated": "MIT",
-    "external_verification": false
+    "external_verification": false,
+    "analysis_input_sha256": "b6be8107270c2e7e2f8d01174524a022485d026b78b4c622486d380203113a60",
+    "line_endings_normalized_after_analysis": true
   },
   "coverage": {
     "full_text_read": true,

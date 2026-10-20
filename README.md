@@ -50,14 +50,6 @@ Windows 为业务首测，其他系统、宿主不因文档构建就视为通过
 
 最后一条仅输出计划，不下载或调用模型。Windows 可用已安装的 py -3 代替 python。
 
-## 命令安装
-
-    npx skills add North0927/north-content-extraction --skill north-content-extraction
-
-需要 Node.js 24.15+。这是完整引擎的技能入口，安装位置由命令选项和宿主决定。
-公开仓库安装将单独核验，桌面实际触发仍以各宿主为准。
-
-
 发行 0.1.0 对应业务协议 2.3.2，修订 r20261018-dispatch-first。[来源映射](source-manifest.json) · [MIT](LICENSE)。
 
 ## 仓库文件职责

@@ -5,10 +5,10 @@
   "distribution_version": "0.1.0",
   "revision": "r20261018-dispatch-first",
   "path_base": "examples/demo/",
-  "status": "partial",
+  "status": "completed",
   "text_analysis_status": "completed",
-  "html_status": "pending",
-  "independent_acceptance_status": "pending",
+  "html_status": "completed",
+  "independent_acceptance_status": "maintainer_checked_for_text_scope",
   "analysis_mode": "detailed",
   "executed_by": {
     "description": "领域执行者按当次明确授权直接分析指定完整文字；未创建或联系其他聊天",
@@ -18,21 +18,25 @@
   },
   "input": {
     "read_only": true,
-    "sha256": "b6be8107270c2e7e2f8d01174524a022485d026b78b4c622486d380203113a60",
-    "path": "source.md"
+    "sha256": "791de56a697e4878a889be28ed5ad10366b57b389710c44e12d18881d8d98c9d",
+    "path": "source.md",
+    "analysis_input_sha256": "b6be8107270c2e7e2f8d01174524a022485d026b78b4c622486d380203113a60",
+    "line_endings_normalized_after_analysis": true
   },
   "artifacts": [
     {
       "type": "markdown_report",
       "version": "1.0.0",
       "status": "completed",
-      "path": "report.md"
+      "path": "report.md",
+      "sha256": "61d8ef0e4522f38ae5542071e5117945cd1d6bd677e6bb08a10efc49087469cc"
     },
     {
       "type": "source_mapping",
       "version": "1.0.0",
       "status": "completed",
-      "path": "source-map.json"
+      "path": "source-map.json",
+      "sha256": "83c4c8dd567419dfef59ae8e59ceb48fcd83a27b3598653916134478953f841b"
     },
     {
       "type": "result_manifest",
@@ -41,11 +45,12 @@
       "path": "result-manifest.json"
     },
     {
-      "executed_by": "主 Agent 后续使用渲染器生成，尚未生成",
+      "executed_by": "维护者使用确定性 Markdown 渲染器生成，不调用模型",
       "type": "html_report",
-      "version": null,
-      "status": "pending",
-      "path": "report.html"
+      "version": "1.0.0",
+      "status": "completed",
+      "path": "report.html",
+      "sha256": "8b883933124db789e4a73529d776bdff063ed9923a55547d540298b5ccc75b5f"
     }
   ],
   "coverage": {
@@ -147,33 +152,36 @@
     "messages_sent": false
   },
   "storage": {
-    "folder_statistics_complete": false,
-    "threshold_alerts": "unknown_for_entire_folder",
-    "source_map_logical_bytes": 7405,
-    "external_staging_used": false,
-    "report_logical_bytes": 16339,
-    "measurement_scope": "Only source.md and three authorized outputs; logical bytes only",
-    "source_logical_bytes": 2599,
-    "folder_logical_bytes": null,
-    "estimated_peak_bytes": null,
-    "disk_allocated_bytes": null,
-    "manifest_logical_bytes": 4715,
-    "measured_at_utc": "2026-10-20T02:08:37.7123709Z"
+    "folder": "examples/demo/",
+    "scope": "single_content_entire_folder",
+    "file_count": 5,
+    "unique_file_count": 5,
+    "hardlink_alias_count": 0,
+    "logical_bytes": 49909,
+    "allocated_bytes": 49909,
+    "gate_bytes": 49909,
+    "gate_MB": 0.049909,
+    "gate_MiB": 0.047597,
+    "measure": "max_logical_allocated",
+    "complete": true,
+    "errors": [],
+    "allocation_errors": [],
+    "external_exclusive_staging_bytes_included": false,
+    "measured_at_utc": "2026-10-20T02:26:32Z",
+    "threshold_alerts": []
   },
   "ai_generated": true,
   "ai_statement": "三份交付物由 AI 生成；原文为项目原创教学示例，不代表 North 亲笔经历；判断和扩展不冒充来源事实，无模型优劣结论。",
   "validation": {
-    "status": "passed_self_checks",
-    "scope": "本地结构与来源映射自检；非独立验收",
+    "status": "passed_for_text_scope",
+    "scope": "实际文字、来源映射、渲染与文件完整性；不含用户主观验收、音视频或跨平台",
     "checks": [
-      "五部分存在",
-      "A-M 索引齐全，F/G/H 合并注明",
-      "M 六问",
-      "P1-P6 双向结论映射",
-      "JSON 可解析",
-      "公开产物不含本地绝对路径、邮箱或实际会话标识",
-      "HTML 标 pending"
+      "6/6 段落锚点回读",
+      "18 项结论来源标识存在",
+      "输入及产物 SHA-256",
+      "HTML 实际生成与浏览器读取",
+      "公开路径采用相对形式"
     ]
   },
-  "next_step": "主 Agent 抽查原文和映射，使用渲染器补 HTML 并核验一致性；不得在生成前修改 HTML 为完成。"
+  "next_step": "使用者审阅实际效果；按同一流程处理自己的材料。未验证媒体功能单独安排。"
 }
